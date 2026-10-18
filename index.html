@@ -478,7 +478,7 @@ function* allTx(){for(const k of allTxKeys()) for(const t of getTx(k)) yield t}
 /* ================= Armazenamento ================= */
 const LSKEY='contas-da-casa-v1';
 /* CONFIGURAÇÃO: preencher após criar o projeto Supabase (ver guia de instalação). */
-const CLOUD_CONFIG={url:'COLOCA_AQUI_O_SUPABASE_URL',anonKey:'COLOCA_AQUI_A_CHAVE_ANON_PUBLIC'};
+const CLOUD_CONFIG={url:'https://partwnlxyoxchmxklcxi.supabase.co',anonKey:'sb_publishable_n9d3sj9ebwMwRTeUXCV8kg__MEwRxrs'};
 const CloudAuth={client:null,user:null,pinHash:null,ready:false,
   configured(){return !!this.client && !CLOUD_CONFIG.url.startsWith('COLOCA_AQUI') && !CLOUD_CONFIG.anonKey.startsWith('COLOCA_AQUI')},
   async init(){
